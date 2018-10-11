@@ -22,8 +22,21 @@
   border-color: slayGray;
 }
 
+.Section {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 20px;
+}
+.Section > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  font-size: 15px;
+  text-align: center;
+}
 .SideBar {
-  display: flex;
+  /*display: flex;
   flex-direction: row;
   background-color: yellow;
   justify-content: left;
@@ -32,10 +45,17 @@
   margin-top: 0px;
   border-bottom-style: solid;
   border-width: 5px;
-  border-bottom-color: black;
+  border-bottom-color: black;*/
+  grid-area: 1 / 1 / 60 / 2;
+  text-align: center;
 }
 
-.SideBar > div {
+
+
+.MainContent{
+	grid-area: 1 / 2 / 60 / 6;
+}
+/*.SideBar > div {
   background-color: pink;
   margin: 10px;
   text-align: left;
@@ -44,4 +64,43 @@
   border-style: solid;
   border-width: 5px;
   border-color: black
+}*/
+
+#Monique{
+	border-radius: 50%;
+   }
+
+#Contact{
+	padding-left: 40px;
+	text-align: left;
 }
+
+img.phone{
+	padding-left: 80px;
+	display: inline;
+}
+
+img.mail{
+	padding-left: 80px;
+	display: inline;
+}
+
+img.facebook{
+	padding-left: 80px;
+	display: inline;
+}
+
+img.web{
+	padding-left: 80px;
+	display: inline;
+}
+
+a.space{
+	margin-left: 100px;
+}
+
+#SocialMedia{
+	padding-left: 40px;
+	text-align: left;
+}
+
